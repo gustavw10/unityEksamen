@@ -35,6 +35,7 @@ public class GunScript : MonoBehaviour
             if(target != null){
                 target.TakeDamage(damage);
             }
+            print(target);
         }
     }
 }

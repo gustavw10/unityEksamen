@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DamageScript : MonoBehaviour
 {
-
     public float health = 50f;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +16,6 @@ public class DamageScript : MonoBehaviour
     {
         
     }
-
     public void TakeDamage (float amount){
         health -= amount;
         if (health <= 0f){
