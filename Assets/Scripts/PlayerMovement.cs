@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
     private float groundSlopeAngle = 0f;  // angle
     private Vector3 groundSlopeDir;
 
-    public GameObject transferedCam;
-
     //END
 
     [HideInInspector]
@@ -34,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        playerCamera = transferedCam.GetComponent<Camera>();
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

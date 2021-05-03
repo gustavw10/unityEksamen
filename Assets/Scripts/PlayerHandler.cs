@@ -49,7 +49,6 @@ public class PlayerHandler : MonoBehaviourPun
         //camera.transform.SetParent(LocalPlayerInstance.transform);
  
         m_camera.transform.localPosition = new Vector3(0f, 0.6f, 0f);
-        GetComponent<PlayerMovement>().transferedCam = m_camera;
 
         GetComponent<PlayerShooting>().m_muzzle = m_gun.transform.Find("Muzzle");
     }
