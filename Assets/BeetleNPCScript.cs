@@ -14,25 +14,43 @@ public class BeetleNPCScript : MonoBehaviour
     public float speed = 0.05f;
     private RaycastHit fire;
 
+    public Animator animator;
+
+    private DamageScript target;
+
+    float TimerForNextAttack, Cooldown;
+
     NavMeshAgent agent;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("MainPlayer").transform;
-        print(player.name);
+        target = player.transform.GetComponent<DamageScript>();
+
+        Cooldown = 2;
+        TimerForNextAttack = Cooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out fire)){
-            targetDistance = fire.distance;
-            if(targetDistance > 10){
-               
-            }
-        }
         transform.LookAt(player);
         agent.SetDestination(player.position);
-        
+        animator.SetBool("Run Forward", true);
+        var distance = Vector3.Distance(player.position, transform.position);
+
+         if (TimerForNextAttack > 0)
+            {
+            TimerForNextAttack  -= Time.deltaTime;
+            }
+            else if (TimerForNextAttack <=0 && distance < 4)
+            {
+            if(target != null){
+                target.TakeDamage(5);
+                animator.Play("Stab Attack");
+                TimerForNextAttack = Cooldown;
+            }
+            
+        }
     }
 }

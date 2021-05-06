@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.5f1 (e2c53f129de5) revision 14861631'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.928; Version 2004; 64bit' Language: 'da' Physical Memory: 6081 MB
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'en' Physical Memory: 16297 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,44 +11,296 @@ C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/David/Documents/GamedevOpgaver/unityEksamen
+C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61990
-Successfully changed project path to: C:/Users/David/Documents/GamedevOpgaver/unityEksamen
-C:/Users/David/Documents/GamedevOpgaver/unityEksamen
+57008
+Successfully changed project path to: C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup
+C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 234.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 133.48 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.5f1 (e2c53f129de5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/David/Documents/GamedevOpgaver/unityEksamen/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   
-    VRAM:     3962 MB
-    Driver:   27.21.14.6589
+    VRAM:     5991 MB
+    Driver:   27.21.14.6611
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.174089 seconds.
+Registered in 0.002512 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 196.92 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 143.96 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.334 seconds
+- Completed reload, in  1.917 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.097298 seconds.
+Registered in 0.003893 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.080 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.8 MB.
+System memory in use after: 115.8 MB.
+
+Unloading 95 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 2.155800 ms (FindLiveObjects: 0.214300 ms CreateObjectMapping: 0.096600 ms MarkObjects: 1.672800 ms  DeleteObjects: 0.170900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/WorldBuilding/SciBuildings
+  artifactKey: Guid(475df1743a88da141af3b27435a329f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/SciBuildings using Guid(475df1743a88da141af3b27435a329f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ee728bee52624856d63ba7e0cae0f0') in 0.005070 seconds
+  Import took 0.010740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Prefabs
+  artifactKey: Guid(a54965f822af06343a5ffdf446f11783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Prefabs using Guid(a54965f822af06343a5ffdf446f11783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bff800825ead1a1b7744aeb7b6a6dd0') in 0.002554 seconds
+  Import took 0.008073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack
+  artifactKey: Guid(00166eb22ff63064aa7bf8211fae07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack using Guid(00166eb22ff63064aa7bf8211fae07a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb479e4fff20a1bc6c21353e97400f59') in 0.002812 seconds
+  Import took 0.007645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.492751 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Animations
+  artifactKey: Guid(bd233d1e21133c54c8a98546e614e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Animations using Guid(bd233d1e21133c54c8a98546e614e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4beaee2b0c0a048f3aa0cbc23e6d5c') in 0.003314 seconds
+  Import took 0.009178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001018 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Animations
+  artifactKey: Guid(bd233d1e21133c54c8a98546e614e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Animations using Guid(bd233d1e21133c54c8a98546e614e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4beaee2b0c0a048f3aa0cbc23e6d5c') in 0.002578 seconds
+  Import took 0.008156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.562557 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes
+  artifactKey: Guid(c3044d2c539506749a9607c66c189c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes using Guid(c3044d2c539506749a9607c66c189c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2cc9a8895337648618c240e805a794') in 0.003555 seconds
+  Import took 0.009717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.661688 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity
+  artifactKey: Guid(b42ca4c5c936383429d2318c931f7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity using Guid(b42ca4c5c936383429d2318c931f7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89217f35a6100b40fd7874bf49080421') in 0.005345 seconds
+  Import took 0.011858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001171 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity
+  artifactKey: Guid(b42ca4c5c936383429d2318c931f7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost on desert.unity using Guid(b42ca4c5c936383429d2318c931f7ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89217f35a6100b40fd7874bf49080421') in 0.003409 seconds
+  Import took 0.008868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.848245 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity
+  artifactKey: Guid(e8cf1d29775c7e24f9dd35148a6437c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity using Guid(e8cf1d29775c7e24f9dd35148a6437c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c281572d3a3b0eeeab9a1d83a6e112') in 0.003717 seconds
+  Import took 0.010374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000778 seconds.
+  path: Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity
+  artifactKey: Guid(e8cf1d29775c7e24f9dd35148a6437c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldBuilding/Sci-Fi Styled Modular Pack/Example scenes/outpost with snow.unity using Guid(e8cf1d29775c7e24f9dd35148a6437c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c281572d3a3b0eeeab9a1d83a6e112') in 0.002968 seconds
+  Import took 0.008767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.754021 seconds.
+  path: Assets/Basics
+  artifactKey: Guid(a5b3b0a27224cc543bb6e5b18355fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics using Guid(a5b3b0a27224cc543bb6e5b18355fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5589380fb035a67f2fb0763e31604a8a') in 0.003482 seconds
+  Import took 0.010315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000736 seconds.
+  path: Assets/Basics
+  artifactKey: Guid(a5b3b0a27224cc543bb6e5b18355fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics using Guid(a5b3b0a27224cc543bb6e5b18355fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5589380fb035a67f2fb0763e31604a8a') in 0.003168 seconds
+  Import took 0.008907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.099694 seconds.
+  path: Assets/Basics/Ice.asset
+  artifactKey: Guid(8a388f2b0ea22da44a710477893ebb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics/Ice.asset using Guid(8a388f2b0ea22da44a710477893ebb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec2693824fbdbf33a51167b39a67553') in 0.054396 seconds
+  Import took 0.059833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Basics/Player 1.prefab
+  artifactKey: Guid(4d908d76bd47d7c4ca9d7690d67186bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics/Player 1.prefab using Guid(4d908d76bd47d7c4ca9d7690d67186bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce77d1581f20ba608d2d9490214f2f5f') in 0.095928 seconds
+  Import took 0.101495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Basics/Player.prefab
+  artifactKey: Guid(2d43e4056f3e9ff4fb4de70067205d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics/Player.prefab using Guid(2d43e4056f3e9ff4fb4de70067205d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7fb070a94fb8cf8e4a2f3ac06858c5') in 0.009785 seconds
+  Import took 0.015126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/Basics/PlayerPrefab.prefab
+  artifactKey: Guid(f8834ce658e3d06499db6926118fe84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics/PlayerPrefab.prefab using Guid(f8834ce658e3d06499db6926118fe84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0662f0180a0dad08a522e32a6fb35a3a') in 0.013650 seconds
+  Import took 0.019245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Basics/MainPlayer.prefab
+  artifactKey: Guid(b07dfac46479df94ba412da190a787b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basics/MainPlayer.prefab using Guid(b07dfac46479df94ba412da190a787b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52f68579301cc1804b80281853f918d') in 0.050781 seconds
+  Import took 0.058625 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003974 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.874 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1942 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.0 MB.
+System memory in use after: 114.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2475.
+Total: 2.122300 ms (FindLiveObjects: 0.177200 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.796000 ms  DeleteObjects: 0.080500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003629 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.843 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1942 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.0 MB.
+System memory in use after: 114.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2478.
+Total: 2.203200 ms (FindLiveObjects: 0.190300 ms CreateObjectMapping: 0.078800 ms MarkObjects: 1.850600 ms  DeleteObjects: 0.082200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003978 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.249 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1942 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.1 MB.
+System memory in use after: 114.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2481.
+Total: 2.423700 ms (FindLiveObjects: 0.331900 ms CreateObjectMapping: 0.113400 ms MarkObjects: 1.856700 ms  DeleteObjects: 0.119900 ms)
+
