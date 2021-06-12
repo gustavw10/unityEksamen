@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerGravity : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
 
     public GameObject pickupEffect;
 
     public float multiplier = 1.9f;
-    public int duration = 10;
+    public int duration = 4;
 
     void OnTriggerEnter(Collider other)
     {

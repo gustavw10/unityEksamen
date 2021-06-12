@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerGravity : MonoBehaviour
+public class PowerSpeed : MonoBehaviour
 {
-
     public GameObject pickupEffect;
 
-    public float multiplier = 1.9f;
+    public float multiplier = 2f;
     public int duration = 10;
 
     void OnTriggerEnter(Collider other)
@@ -20,18 +19,20 @@ public class PowerGravity : MonoBehaviour
 
     IEnumerator Pickup(Collider player)
     {
-        Debug.Log("Power picked");
+        Debug.Log("Power speed");
         Instantiate(pickupEffect, transform.position, transform.rotation);
 
         PlayerMovement playerMove = player.GetComponent<PlayerMovement>();
-        playerMove.gravity /= multiplier;
+        playerMove.walkingSpeed *= multiplier;
+        playerMove.runningSpeed *= multiplier;
 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
         yield return new WaitForSeconds(duration);
 
-        playerMove.gravity *= multiplier;
+        playerMove.walkingSpeed /= multiplier;
+        playerMove.runningSpeed /= multiplier;
 
         Destroy(gameObject);
     }
