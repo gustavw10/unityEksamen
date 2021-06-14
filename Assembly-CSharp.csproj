@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{834c5335-36c5-5d52-5561-4290210676e2}</ProjectGuid>
+    <ProjectGuid>{d25679b1-cb36-e27d-c4cb-9e4c2e9bb5bc}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -84,6 +84,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Spawner.cs" />
      <Compile Include="Assets\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CloudsControl.cs" />
      <Compile Include="Assets\PlayerShooting.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -119,7 +120,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\Spawner.cs" />
+     <Compile Include="Assets\Scripts\ScatterPowerUps.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -377,10 +378,10 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -728,102 +729,102 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Polybrush.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Polybrush.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Polybrush.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Polybrush">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Polybrush.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Polybrush.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-        <HintPath>C:/Users/Gustav/Desktop/ShootingGameBackup/EksamenBackup/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+        <HintPath>C:/Users/David/Desktop/unityEksamen_final/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{07a28ed0-851b-ecce-a067-0b98a774da4a}</Project>
+      <Project>{d8051bd7-3cf5-92ef-0763-0470535adc0a}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{86e7ab7b-ad9b-bfdb-497c-29b3c1bbf2bc}</Project>
+      <Project>{eb49a6b3-7337-18f4-05af-504a00af74ff}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{c078fb86-f7f4-7a89-4f42-d5068c4e48bc}</Project>
+      <Project>{69208c5b-65ae-215f-12fd-6f713f682e7c}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{5536e9fc-eee2-1904-5d09-c3d527e2e7a8}</Project>
+      <Project>{33686e35-4eed-3713-34a0-5700e779250d}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{fd037693-f77b-83aa-51fe-1be0be771d9d}</Project>
+      <Project>{ca452322-3f58-17e2-952c-c30c201c0756}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{a7434e28-a141-e4eb-19b2-05e4b98e6044}</Project>
+      <Project>{b06cf4a4-1435-1fa2-ccd1-0dbd9d2d786c}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{6757dc75-75fb-5487-6150-ee0a3f87eddf}</Project>
+      <Project>{ca4d6ca0-390d-6920-f32c-aacd2c1527a1}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{6d314adb-e9d2-fced-8a8d-c6c8c90dd561}</Project>
+      <Project>{deea66fb-f31b-094c-68d6-310732ed4206}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{45593d07-1cf4-7f4d-e371-bfd36ba2bfa7}</Project>
+      <Project>{e292170a-8eb2-60c4-9fbd-2784f3f5a6f4}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{7de3012b-7f78-133b-edb9-ea430aebfb0b}</Project>
+      <Project>{67f53794-48d0-7f90-e341-c66689b62f14}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>
