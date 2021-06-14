@@ -18,6 +18,8 @@ public class BeetleNPCScript : MonoBehaviour
 
     private DamageScript target;
 
+    public int permittedAttackDistance = 4;
+
     float TimerForNextAttack, Cooldown;
 
     NavMeshAgent agent;
@@ -43,7 +45,7 @@ public class BeetleNPCScript : MonoBehaviour
             {
             TimerForNextAttack  -= Time.deltaTime;
             }
-            else if (TimerForNextAttack <=0 && distance < 4)
+            else if (TimerForNextAttack <=0 && distance < permittedAttackDistance)
             {
             if(target != null){
                 target.TakeDamage(5);
