@@ -8,6 +8,7 @@ public abstract class PickUpScript : MonoBehaviour
     public string itemName;
     public GameObject prefab;
     public bool canRotate = true;
+    public float randomRange = 50.0f;
 
     void Start()
     {
@@ -31,7 +32,7 @@ public abstract class PickUpScript : MonoBehaviour
     }
 
     private void InstantiateAndDestroy() {
-        var position = new Vector3(Random.Range(-10.0f, 10.0f), 1, Random.Range(-10.0f, 10.0f));
+        var position = new Vector3(Random.Range(-randomRange, randomRange), 1, Random.Range(-randomRange, randomRange));
         Instantiate(prefab, position, Quaternion.identity);
         Destroy(gameObject);
     }

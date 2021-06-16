@@ -6,12 +6,19 @@ public class PlayerHealthScript : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public int takeDamageAmount = 5;
+    public RectTransform healthBar;
+    private int healthBarWidthScale = 5;
+    private int healthBarHeight = 54;
 
     void Start()
     {
         currentHealth = maxHealth;
-        InvokeRepeating("TakeDamage", 5.0f, 1.0f);
+        // Uncomment to test health
+        //InvokeRepeating("TakeDamageTestWrapper", 5.0f, 1.0f);
+    }
+
+    private void TakeDamageTestWrapper() {
+        TakeDamage(5);
     }
 
     public void Heal(int amount) {
@@ -19,13 +26,23 @@ public class PlayerHealthScript : MonoBehaviour
         if(currentHealth > maxHealth) {
             currentHealth = maxHealth;
         }
+        UpdateHealthBar();
     }
 
-    void TakeDamage() {
-        currentHealth -= takeDamageAmount;
-        if(currentHealth <= 0) {
+    public void TakeDamage(int amount) {
+        currentHealth -= amount;
+        if(currentHealth < 0) {
+            currentHealth = 0;
+        }
+        UpdateHealthBar();
+        if(currentHealth == 0) {
             Die();
         }
+    }
+
+    void UpdateHealthBar() {
+        int newWidth = currentHealth * healthBarWidthScale;
+        healthBar.sizeDelta = new Vector2(newWidth, healthBarHeight);
     }
 
     void Die() {

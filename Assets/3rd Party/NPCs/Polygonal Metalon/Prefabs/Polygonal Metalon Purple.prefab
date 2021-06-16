@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 330076850136359104}
   m_Layer: 0
   m_Name: Polygonal Metalon Purple
-  m_TagString: Untagged
+  m_TagString: Creep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,6 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
 --- !u!114 &7066086622815111511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,6 +846,8 @@ MonoBehaviour:
   allowedDistance: 0
   NPC: {fileID: 1462720695320296}
   speed: 2
+  animator: {fileID: 0}
+  permittedAttackDistance: 4
 --- !u!195 &1600030103209324594
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1023,6 +1026,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

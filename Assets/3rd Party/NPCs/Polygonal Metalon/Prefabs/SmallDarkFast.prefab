@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 43699873375201332}
   m_Layer: 0
   m_Name: SmallDarkFast
-  m_TagString: Untagged
+  m_TagString: Creep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1000,6 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
 --- !u!114 &3909003167370423782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1316,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
