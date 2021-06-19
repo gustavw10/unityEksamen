@@ -1001,6 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
+  animator: {fileID: 2076110324715097480}
 --- !u!114 &3909003167370423782
 MonoBehaviour:
   m_ObjectHideFlags: 0

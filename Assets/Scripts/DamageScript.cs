@@ -7,7 +7,7 @@ public class DamageScript : MonoBehaviour
 {
     public float health = 50f;
     public GameObject coins;
-
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +22,47 @@ public class DamageScript : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
-        if (health <= 0f)
+        if(health > 0)
         {
-            Vector3 placement = gameObject.transform.localPosition;
+            health -= amount;
+        }
+        
+        Debug.Log(health);
+        
+        if (health - amount <= 0f){
+            Debug.Log("inside part 2");
+            //npcs 
+            
+            var rNumber = Random.Range(1,5);
+            Invoke("DropCoin", 2);
+            Destroy(gameObject, 2f);
+            if(rNumber < 3){
+                animator.Play("Take Damage");
+            }
+            else {
+                animator.Play("Die");
+            }
+            
+            Invoke("KillSwitch", 1);
+            
+            GetComponent<BeetleNPCScript>().enabled = false;
+            // foreach(Collider col in GetComponents<CapsuleCollider>()){
+            //     col.enabled = false;
+            // }
+            
+        }
+    }
+    public void KillSwitch(){
+            GetComponent<Animator>().enabled = false;
+            
+            // setRigidbodyState(false);
+            // setColliderState(true);
+    }
+
+    public void DropCoin(){
+        Vector3 placement = gameObject.transform.localPosition;
             Quaternion rotation = gameObject.transform.localRotation;
-            Destroy(gameObject);
+            //Destroy(gameObject);
             GameObject test = Instantiate(coins, placement, rotation);
             Debug.Log(test);
             if (gameObject.CompareTag("Player"))
@@ -36,6 +71,26 @@ public class DamageScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
-        }
     }
+
+
+    // public void setRigidbodyState(bool state){
+    //     Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
+
+    //     foreach(Rigidbody rigidbody in rigidbodies){
+    //         rigidbody.isKinematic = state;
+    //     }
+
+    //     GetComponent<Rigidbody>().isKinematic = !state;
+    // }
+
+    //  public void setColliderState(bool state){
+    //     Collider[] colliders = GetComponentsInChildren<Collider>();
+
+    //     foreach(Collider collider in colliders){
+    //         collider.enabled = state;
+    //     }
+
+    //     GetComponent<Collider>().enabled = !state;
+    // }
 }
