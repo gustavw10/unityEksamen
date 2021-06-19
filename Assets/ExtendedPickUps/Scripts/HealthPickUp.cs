@@ -7,6 +7,10 @@ public class HealthPickUp : PickUpScript
     public int healAmount = 25;
 
     public override void PickUp(Collider other) {
-        other.GetComponent<PlayerHealthScript>().Heal(healAmount);
+        PlayerHealthScript player = other.GetComponent<PlayerHealthScript>();
+        if (player.CanHeal()) {
+            player.Heal(healAmount);
+            Destroy(gameObject);
+        }
     }
 }

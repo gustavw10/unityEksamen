@@ -36,23 +36,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonStreamQueue.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonNetworkPart.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Interfaces\IPhotonViewCallbacks.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformViewClassic.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonHandler.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PunClasses.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbody2DView.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonNetwork.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonView.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Enums.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Interfaces\IPunCallbacks.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Utilities\NestedComponentUtilities.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonStreamQueue.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonNetworkPart.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Interfaces\IPhotonViewCallbacks.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonHandler.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Views\PhotonAnimatorView.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\CustomTypes.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbodyView.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Enums.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Interfaces\IPunCallbacks.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\ServerSettings.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\Utilities\NestedComponentUtilities.cs" />
      <None Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Code\PhotonUnityNetworking.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.1.5f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

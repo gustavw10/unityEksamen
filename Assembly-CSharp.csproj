@@ -37,99 +37,102 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\3rd Party\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-     <Compile Include="Assets\Scripts\DamageScript.cs" />
      <Compile Include="Assets\AdvPlayerShooting.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\FinalController.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_SunControl.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerInventoryScript.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\AdvPlayerHandler.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
      <Compile Include="Assets\Scripts\PowerSpeed.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\3rd Party\Low Poly Modular Terrain Pack\Bonus_Assets\Scripts\ModularTerrainCameraControl.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\Scripts\AmmoDisplay.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\ExtendedPickUps\Scripts\PickUpScript.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerHealthScript.cs" />
+     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CameraControl.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CloudsControl.cs" />
+     <Compile Include="Assets\PlayerShooting.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\Scripts\CustomGameManager.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\BeetleNPCScript.cs" />
+     <Compile Include="Assets\Health.cs" />
+     <Compile Include="Assets\Portals\Scripts\PortalTextureSetup.cs" />
+     <Compile Include="Assets\ObjectCollector\Scripts\ObjectiveGoalScript.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\GunScript.cs" />
+     <Compile Include="Assets\ObjectCollector\Scripts\PlayerObjectivesScript.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\3rd Party\Low Poly Modular Terrain Pack\Bonus_Assets\Scripts\ModularTerrainSunControl.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\DamageScript.cs" />
+     <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerScoreScript.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_SunControl.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\ScatterPowerUps.cs" />
      <Compile Include="Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\PowerHealth.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\AmmoDisplay.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Scripts\CharacterControllerScript.cs" />
      <Compile Include="Assets\SpawnerScript.cs" />
      <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_FireLightControl.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Scripts\PlayerLook.cs" />
-     <Compile Include="Assets\ExtendedPickUps\Scripts\PickUpScript.cs" />
      <Compile Include="Assets\Scripts\Triangle.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Scripts\RandomSpawner.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerHealthScript.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\GoldPickUp.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\3rd Party\Low Poly Modular Terrain Pack\Bonus_Assets\Scripts\ModularTerrainCloudsControl.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CameraControl.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Spawner.cs" />
-     <Compile Include="Assets\3rd Party\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CloudsControl.cs" />
-     <Compile Include="Assets\PlayerShooting.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-     <Compile Include="Assets\Scripts\CustomGameManager.cs" />
+     <Compile Include="Assets\ObjectCollector\Scripts\SpawnPointScript.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Scripts\PowerGravity.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Portals\Scripts\PortalCamera.cs" />
-     <Compile Include="Assets\BeetleNPCScript.cs" />
      <Compile Include="Assets\3rd Party\Weapons\sprite muzzle flashes\AnimatedTexture.cs" />
-     <Compile Include="Assets\Health.cs" />
-     <Compile Include="Assets\Portals\Scripts\PortalTextureSetup.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\GunScript.cs" />
      <Compile Include="Assets\Portals\Scripts\PortalTeleporter.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\3rd Party\Weapons\MobilityArts\SciFiHandGun\Scripts\OrbitAroundTarget.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\Scripts\PlayerHandler.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-     <Compile Include="Assets\3rd Party\Low Poly Modular Terrain Pack\Bonus_Assets\Scripts\ModularTerrainSunControl.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\HealthPickUp.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\HandleCharacter.cs" />
      <Compile Include="Assets\Scripts\IAttackable.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerScoreScript.cs" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\3rd Party\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -765,6 +768,12 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
@@ -780,6 +789,9 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
@@ -792,11 +804,17 @@
     <Reference Include="Unity.Polybrush">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Polybrush.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -804,23 +822,8 @@
     <Reference Include="Unity.ProGrids">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -840,13 +843,13 @@
       <Project>{677905a8-6123-5400-2b0a-492f31474141}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{15bb9eb3-d7cf-5ed0-2294-9cd8eb17e280}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
       <Project>{5ca80664-43c5-74aa-0acb-b2fe625d483b}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{15bb9eb3-d7cf-5ed0-2294-9cd8eb17e280}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{3d03fb1d-26b2-2f04-0ee8-f26d905944a1}</Project>

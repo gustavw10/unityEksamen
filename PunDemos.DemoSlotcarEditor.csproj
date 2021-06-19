@@ -37,8 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\BezierSplineInspector.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\BezierCurveInspector.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\LineInspector.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\BezierCurveInspector.cs" />
      <None Include="Assets\3rd Party\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\PunDemos.DemoSlotcarEditor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.1.5f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -8,5 +8,6 @@ public class GoldPickUp : PickUpScript
 
     public override void PickUp(Collider other) {
         other.GetComponent<PlayerInventoryScript>().AddGold(goldAmount);
+        Destroy(gameObject);
     }
 }

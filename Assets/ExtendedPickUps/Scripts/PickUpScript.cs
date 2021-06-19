@@ -8,7 +8,6 @@ public abstract class PickUpScript : MonoBehaviour
     public string itemName;
     public GameObject prefab;
     public bool canRotate = true;
-    public float randomRange = 50.0f;
 
     void Start()
     {
@@ -18,7 +17,7 @@ public abstract class PickUpScript : MonoBehaviour
     void Update()
     {
         if(canRotate) {
-            transform.Rotate(0, 0, 90 * Time.deltaTime);
+            transform.Rotate(0, 90 * Time.deltaTime, 0);
         }
     }
 
@@ -27,13 +26,6 @@ public abstract class PickUpScript : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         if (other.tag == "Player") {
             PickUp(other);
-            InstantiateAndDestroy();
         }
-    }
-
-    private void InstantiateAndDestroy() {
-        var position = new Vector3(Random.Range(-randomRange, randomRange), 1, Random.Range(-randomRange, randomRange));
-        Instantiate(prefab, position, Quaternion.identity);
-        Destroy(gameObject);
     }
 }

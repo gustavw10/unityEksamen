@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
      <Compile Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\About\Scripts\Editor\ReadmeEditor.cs" />
+     <Compile Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
      <None Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\settings\PackageImportList_ShaderGraph.txt" />
      <None Include="Assets\3rd Party\WorldBuilding\SciBuildings\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageImportList.txt" />
     <Reference Include="UnityEngine">
@@ -655,6 +655,12 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
@@ -670,6 +676,9 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
@@ -682,17 +691,26 @@
     <Reference Include="Unity.Polybrush">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Polybrush.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
         <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>/Users/cecilie/Desktop/unityEksamen/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -716,13 +734,13 @@
       <Project>{677905a8-6123-5400-2b0a-492f31474141}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{15bb9eb3-d7cf-5ed0-2294-9cd8eb17e280}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
       <Project>{5ca80664-43c5-74aa-0acb-b2fe625d483b}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{15bb9eb3-d7cf-5ed0-2294-9cd8eb17e280}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{3d03fb1d-26b2-2f04-0ee8-f26d905944a1}</Project>

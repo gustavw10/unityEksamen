@@ -13,12 +13,10 @@ public class PlayerHealthScript : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        // Uncomment to test health
-        //InvokeRepeating("TakeDamageTestWrapper", 5.0f, 1.0f);
     }
 
-    private void TakeDamageTestWrapper() {
-        TakeDamage(5);
+    public bool CanHeal() {
+        return currentHealth < maxHealth;
     }
 
     public void Heal(int amount) {
@@ -46,6 +44,8 @@ public class PlayerHealthScript : MonoBehaviour
     }
 
     void Die() {
-         UnityEditor.EditorApplication.isPlaying = false;
+        if(Application.isEditor) {
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
     }
 }

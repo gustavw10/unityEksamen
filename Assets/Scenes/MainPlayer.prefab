@@ -207,8 +207,9 @@ GameObject:
   - component: {fileID: 1724348862}
   - component: {fileID: 1724348863}
   - component: {fileID: 1724348864}
+  - component: {fileID: 1724348858}
   m_Layer: 0
-  m_Name: Player
+  m_Name: MainPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,13 +302,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362555791964834120}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2eafe35c114d0e44b62635834a30562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
-  coins: {fileID: 0}
+  coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
 --- !u!114 &1724348862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +323,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldStored: 0
   textmeshPro: {fileID: 0}
+  icon: {fileID: 0}
+  coinsSprite: {fileID: 21300000, guid: be5129279b1dfca4ab4fa9ddc1c574f0, type: 3}
+  stackOfCoinsSprite: {fileID: 21300000, guid: 8ea3e46938e041f4a8abb8200dc90159, type: 3}
+  bagOfCoinsSprite: {fileID: 21300000, guid: 73b277da837c0874893f6123d5842ca0, type: 3}
 --- !u!114 &1724348863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +355,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textmeshPro: {fileID: 0}
+--- !u!114 &1724348858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362555791964834120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2647fd9fd75794514b0bf302ae46d330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: {fileID: 21300000, guid: 57a57e5de7a11a945a125ef4383fe3e1, type: 3}
+  inactive: {fileID: 21300000, guid: 2f5ddc8f7d908a24eba2215be6500082, type: 3}
+  icon: {fileID: 0}
+  foreground: {fileID: 0}
 --- !u!1 &362555792317980036
 GameObject:
   m_ObjectHideFlags: 0

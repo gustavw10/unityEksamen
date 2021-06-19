@@ -36,19 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChannelWellKnownProperties.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatClient.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatAppSettings.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatParameterCode.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatDisconnectCause.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatUserStatus.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatState.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChannelCreationOptions.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChannelWellKnownProperties.cs" />
+     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatClient.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\IChatClientListener.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatEventCode.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatOperationCode.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatChannel.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChatPeer.cs" />
-     <Compile Include="Assets\3rd Party\Photon\PhotonChat\Code\ChannelCreationOptions.cs" />
      <None Include="Assets\3rd Party\Photon\PhotonChat\Code\changes-chat.txt" />
      <None Include="Assets\3rd Party\Photon\PhotonChat\Code\PhotonChat.asmdef" />
     <Reference Include="UnityEngine">

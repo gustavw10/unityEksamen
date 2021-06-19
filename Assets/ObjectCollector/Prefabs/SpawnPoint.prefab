@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5671468714253064807
+--- !u!1 &5715572413257262935
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5671468714253064796}
-  - component: {fileID: 5671468714253064795}
-  - component: {fileID: 5671468714253064794}
-  - component: {fileID: 5671468714253064793}
-  - component: {fileID: 5671468714253064792}
+  - component: {fileID: 2942225796954012043}
+  - component: {fileID: 6172586293688166778}
+  - component: {fileID: 5437922799945103997}
+  - component: {fileID: 4105635221303224999}
+  - component: {fileID: 4442587134574677531}
   m_Layer: 0
-  m_Name: HealthPill
-  m_TagString: Untagged
+  m_Name: SpawnPoint
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5671468714253064796
+--- !u!4 &2942225796954012043
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671468714253064807}
+  m_GameObject: {fileID: 5715572413257262935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 1, z: -5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 0.099999994, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5671468714253064795
+--- !u!33 &6172586293688166778
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671468714253064807}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5671468714253064794
+  m_GameObject: {fileID: 5715572413257262935}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5437922799945103997
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671468714253064807}
+  m_GameObject: {fileID: 5715572413257262935}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ecfdb4e1085a4b018737630d8190705, type: 2}
+  - {fileID: 2100000, guid: b8939bf2575564985923062660558cff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,13 +84,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5671468714253064793
+--- !u!136 &4105635221303224999
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671468714253064807}
+  m_GameObject: {fileID: 5715572413257262935}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -98,19 +98,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5671468714253064792
+--- !u!114 &4442587134574677531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671468714253064807}
+  m_GameObject: {fileID: 5715572413257262935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1edbf2cf534b44b4889f95e309199665, type: 3}
+  m_Script: {fileID: 11500000, guid: 14445b8e14cca4484a56cebe661ba393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Health Pill
-  prefab: {fileID: 5671468714253064807}
-  canRotate: 1
-  healAmount: 25
+  flagPrefab: {fileID: 3038356692214420312, guid: 7c01b256a783d44e288b3a3845c1a015, type: 3}
