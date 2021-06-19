@@ -1,14 +1,17 @@
 Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 16297 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2021.1.5f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2021.1.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/cecilie/Desktop/unityEksamen
+C:/Users/Gustav/Desktop/UnityEksamen/unityEksamen
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
@@ -19,8 +22,8 @@ Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 171.28 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.5f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/cecilie/Desktop/unityEksamen/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Gustav/Desktop/UnityEksamen/unityEksamen/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 2021-06-19 19:19:17.292 Unity[5203:429367] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
 2021-06-19 19:19:17.292 Unity[5203:429367] Metal devices available: 1
