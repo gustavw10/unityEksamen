@@ -53,6 +53,7 @@
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Scripts\AmmoDisplay.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\Grenade.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\PickUpScript.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -115,6 +116,7 @@
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\ThrowGrenade.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Spawner.cs" />
