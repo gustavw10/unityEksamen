@@ -7,8 +7,8 @@ public class PlayerHealthScript : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public RectTransform healthBar;
-    private int healthBarWidthScale = 5;
-    private int healthBarHeight = 54;
+    public float healthBarWidthScale = 5;
+    public float healthBarHeight = 54;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class PlayerHealthScript : MonoBehaviour
         if(currentHealth > maxHealth) {
             currentHealth = maxHealth;
         }
-        UpdateHealthBar();
+        //UpdateHealthBar();
     }
 
     public void TakeDamage(int amount) {
@@ -32,14 +32,14 @@ public class PlayerHealthScript : MonoBehaviour
         if(currentHealth < 0) {
             currentHealth = 0;
         }
-        UpdateHealthBar();
+        //UpdateHealthBar();
         if(currentHealth == 0) {
             Die();
         }
     }
 
-    void UpdateHealthBar() {
-        int newWidth = currentHealth * healthBarWidthScale;
+    public void UpdateHealthBar(float health) {
+        float newWidth = health * healthBarWidthScale;
         healthBar.sizeDelta = new Vector2(newWidth, healthBarHeight);
     }
 

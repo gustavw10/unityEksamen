@@ -9,12 +9,16 @@ public class DamageScript : MonoBehaviour
     public float amount = 5f;
     public GameObject coins;
     public Animator animator;
+    private PlayerHealthScript playerHealthScript;
     // Start is called before the first frame update
     void Start()
     {
-        if (gameObject.CompareTag("Player")) {
+        if (gameObject.CompareTag("Player"))
+        {
             PlayerTakeDamage(amount);
-        } else {
+        }
+        else
+        {
             health -= amount;
             if (health <= 0f)
             {
@@ -24,16 +28,18 @@ public class DamageScript : MonoBehaviour
         }
     }
 
-    private void InstantiateCoin() {
+    private void InstantiateCoin()
+    {
         Vector3 placement = gameObject.transform.localPosition;
         placement.y += .5f;
         Quaternion rotation = gameObject.transform.localRotation;
         Instantiate(coins, placement, rotation);
     }
 
-    private void PlayerTakeDamage(float amount) {
+    private void PlayerTakeDamage(float amount)
+    {
         PlayerHealthScript player = gameObject.GetComponent<PlayerHealthScript>();
-        player.TakeDamage((int) amount);
+        player.TakeDamage((int)amount);
         if (player.currentHealth <= 0)
         {
             SceneManager.LoadScene("StartMenu");
@@ -41,58 +47,68 @@ public class DamageScript : MonoBehaviour
             Cursor.visible = true;
         }
     }
-    
+
     public void TakeDamage(float amount)
     {
-        if(health > 0)
+        if (health > 0)
         {
             health -= amount;
         }
-        
+
         Debug.Log(health);
-        
-        if (health - amount <= 0f){
+        if (gameObject.tag.Equals("Player"))
+        {
+            PlayerHealthScript player = gameObject.GetComponent<PlayerHealthScript>();
+            player.UpdateHealthBar(health);
+            Debug.Log(player);
+        }
+        if (health - amount <= 0f)
+        {
             Debug.Log("inside part 2");
             //npcs 
-            
-            var rNumber = Random.Range(1,5);
+
+            var rNumber = Random.Range(1, 5);
             Invoke("DropCoin", 2);
             Destroy(gameObject, 2f);
-            if(rNumber < 3){
+            if (rNumber < 3)
+            {
                 animator.Play("Take Damage");
             }
-            else {
+            else
+            {
                 animator.Play("Die");
             }
-            
+
             Invoke("KillSwitch", 1);
-            
+
             GetComponent<BeetleNPCScript>().enabled = false;
             // foreach(Collider col in GetComponents<CapsuleCollider>()){
             //     col.enabled = false;
             // }
-            
+
         }
     }
-    public void KillSwitch(){
-            GetComponent<Animator>().enabled = false;
-            
-            // setRigidbodyState(false);
-            // setColliderState(true);
+    public void KillSwitch()
+    {
+        GetComponent<Animator>().enabled = false;
+
+        // setRigidbodyState(false);
+        // setColliderState(true);
     }
 
-    public void DropCoin(){
+    public void DropCoin()
+    {
         Vector3 placement = gameObject.transform.localPosition;
-            Quaternion rotation = gameObject.transform.localRotation;
-            //Destroy(gameObject);
-            GameObject test = Instantiate(coins, placement, rotation);
-            Debug.Log(test);
-            if (gameObject.CompareTag("Player"))
-            {
-                SceneManager.LoadScene("StartMenu");
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+        Quaternion rotation = gameObject.transform.localRotation;
+        //Destroy(gameObject);
+        GameObject test = Instantiate(coins, placement, rotation);
+        Debug.Log(test);
+        if (gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("StartMenu");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
 
