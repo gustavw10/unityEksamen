@@ -50,44 +50,42 @@ public class DamageScript : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        if (health > 0)
-        {
-            health -= amount;
-        }
-
-        Debug.Log(health);
         if (gameObject.tag.Equals("Player"))
         {
-            PlayerHealthScript player = gameObject.GetComponent<PlayerHealthScript>();
-            player.UpdateHealthBar(health);
-            Debug.Log(player);
-        }
-        if (health - amount <= 0f)
-        {
-            Debug.Log("inside part 2");
-            //npcs 
-
-            var rNumber = Random.Range(1, 5);
-            Invoke("DropCoin", 2);
-            Destroy(gameObject, 2f);
-            if (rNumber < 3)
-            {
-                animator.Play("Take Damage");
-            }
-            else
-            {
-                animator.Play("Die");
+            PlayerTakeDamage(amount);
+        } else {
+            if (health > 0) {
+                health -= amount;
             }
 
-            Invoke("KillSwitch", 1);
+            Debug.Log(health);
+        
+            if (health - amount <= 0f) {
+                Debug.Log("inside part 2");
+                //npcs 
 
-            GetComponent<BeetleNPCScript>().enabled = false;
-            // foreach(Collider col in GetComponents<CapsuleCollider>()){
-            //     col.enabled = false;
-            // }
+                var rNumber = Random.Range(1, 5);
+                Invoke("DropCoin", 2);
+                Destroy(gameObject, 2f);
+                if (rNumber < 3)
+                {
+                    animator.Play("Take Damage");
+                }
+                else
+                {
+                    animator.Play("Die");
+                }
 
+                Invoke("KillSwitch", 1);
+
+                GetComponent<BeetleNPCScript>().enabled = false;
+                // foreach(Collider col in GetComponents<CapsuleCollider>()){
+                //     col.enabled = false;
+                // }
+            }
         }
     }
+
     public void KillSwitch()
     {
         GetComponent<Animator>().enabled = false;
