@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class BeetleNPCScript : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public GameObject enemyGrenadePre;
     public Transform player;
     public float targetDistance;
     public float allowedDistance;
@@ -31,7 +31,29 @@ public class BeetleNPCScript : MonoBehaviour
 
         Cooldown = 2;
         TimerForNextAttack = Cooldown;
+
+        if(gameObject.name.Equals("SmallDarkBomber(Clone)") ){
+        StartCoroutine(ThrowEnemyBomb());
+        }
     }
+
+      IEnumerator ThrowEnemyBomb()
+  {
+          var distance = Vector3.Distance(player.position, transform.position);
+          yield return new WaitForSeconds(3f);
+          
+            if(gameObject.name.Equals("SmallDarkBomber(Clone)") && distance < 100){
+                
+            //GameObject grenade = Instantiate(enemyGrenadePre, transform.position, transform.rotation);
+            GameObject bomb = Instantiate(enemyGrenadePre, transform.position, transform.rotation);
+            Debug.Log("TOSSING BOMB");
+            var direction = player.position - transform.position;
+            Rigidbody rb = bomb.GetComponent<Rigidbody>();
+            rb.AddForce(direction * 50);
+        }
+
+          StartCoroutine(ThrowEnemyBomb());
+  }
 
     // Update is called once per frame
     void Update()

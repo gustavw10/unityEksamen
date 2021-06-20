@@ -8,6 +8,8 @@ public class DamageScript : MonoBehaviour
     public float health = 50f;
     public float amount = 5f;
     public GameObject coins;
+
+    public GameObject crystals;
     public Animator animator;
     private PlayerHealthScript playerHealthScript;
     // Start is called before the first frame update
@@ -57,12 +59,14 @@ public class DamageScript : MonoBehaviour
             if (health > 0) {
                 health -= amount;
             }
-
-            Debug.Log(health);
         
             if (health - amount <= 0f) {
                 Debug.Log("inside part 2");
                 //npcs 
+
+                if(gameObject.name.Equals("SmallDarkCrystal(Clone)")){
+                Invoke("SpawnCrystals", 2);
+                }
 
                 var rNumber = Random.Range(1, 5);
                 Invoke("DropCoin", 2);
@@ -92,6 +96,13 @@ public class DamageScript : MonoBehaviour
 
         // setRigidbodyState(false);
         // setColliderState(true);
+    }
+    public void SpawnCrystals(){
+            Vector3 placement = gameObject.transform.localPosition;
+            Quaternion rotation = gameObject.transform.localRotation;
+          
+            GameObject crys = Instantiate(crystals, placement, rotation);
+            Debug.Log(crys);
     }
 
     public void DropCoin()
