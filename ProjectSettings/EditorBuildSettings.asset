@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DesertWorld.unity
     guid: ebb7836d7e7785648b3a0b224e53f38f
+  - enabled: 1
+    path: Assets/Scenes/IceWorld.unity
+    guid: 9cbaa455aad647b4bb59bd4a0d80589d
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4e8424f275c60df43b2fe88b8b111088
   m_configObjects: {}

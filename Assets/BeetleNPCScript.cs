@@ -58,6 +58,7 @@ public class BeetleNPCScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         transform.LookAt(player);
         agent.SetDestination(player.position);
         animator.SetBool("Run Forward", true);

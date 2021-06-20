@@ -12,6 +12,7 @@ public class DamageScript : MonoBehaviour
     public GameObject crystals;
     public Animator animator;
     private PlayerHealthScript playerHealthScript;
+    public CameraShake cameraShake;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,9 +43,10 @@ public class DamageScript : MonoBehaviour
     {
         PlayerHealthScript player = gameObject.GetComponent<PlayerHealthScript>();
         player.TakeDamage((int)amount);
+        StartCoroutine(cameraShake.Shake(.10f, .05f));
         if (player.currentHealth <= 0)
         {
-            SceneManager.LoadScene("StartMenu");
+            SceneManager.LoadScene("GameOver");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
