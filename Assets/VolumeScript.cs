@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class VolumeScript : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioListener AudioListener;
     public float shootVolume = 1f;
 
 
     public void Update() {
-        audioSource.volume = shootVolume;
+        AudioListener.volume = shootVolume;
     }
 
     public void SetVolume(float volume)
