@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DamageScript : MonoBehaviour
 {
     public float health = 50f;
+    public float amount = 5f;
     public GameObject coins;
     public Animator animator;
     // Start is called before the first frame update
