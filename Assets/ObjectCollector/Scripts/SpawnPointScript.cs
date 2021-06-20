@@ -13,7 +13,7 @@ public class SpawnPointScript : MonoBehaviour
     }
     
     private void InstantiateFlagOnSpawnPoint() {
-        // Sets flag on spawnpoint
+        // Sets flag on spawnpoint as child of spawnpoint
         flag = Instantiate(flagPrefab, gameObject.transform, true);
         // Center flag on the spawnpoint
         flag.transform.localPosition = new Vector3(0, 0, 0);

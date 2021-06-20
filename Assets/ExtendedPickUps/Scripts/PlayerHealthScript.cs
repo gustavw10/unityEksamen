@@ -44,8 +44,8 @@ public class PlayerHealthScript : MonoBehaviour
     }
 
     void Die() {
-        if(Application.isEditor) {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
+        //if(Application.isEditor) {
+        //    UnityEditor.EditorApplication.isPlaying = false;
+        //}
     }
 }
