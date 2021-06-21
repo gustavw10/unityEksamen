@@ -313,6 +313,7 @@ MonoBehaviour:
   coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
   crystals: {fileID: 0}
   animator: {fileID: 0}
+  cameraShake: {fileID: 0}
 --- !u!114 &1724348862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,7 +1250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7050785882979838537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6861542714650466101}
@@ -1463,7 +1464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638824728586810023, guid: 51052d02d51840943aa1798b74697c3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.094
+      value: -0.216
       objectReference: {fileID: 0}
     - target: {fileID: 3638824728586810023, guid: 51052d02d51840943aa1798b74697c3f, type: 3}
       propertyPath: m_LocalRotation.w

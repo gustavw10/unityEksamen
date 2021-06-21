@@ -44,6 +44,7 @@
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\AdvPlayerHandler.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+     <Compile Include="Assets\Scripts\WeaponSwitching.cs" />
      <Compile Include="Assets\Scripts\PowerSpeed.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\3rd Party\Low Poly Modular Terrain Pack\Bonus_Assets\Scripts\ModularTerrainCameraControl.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\ExtendedPickUps\Scripts\PickUpScript.cs" />
      <Compile Include="Assets\3rd Party\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\GameOverScript.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\PlayerHealthScript.cs" />
      <Compile Include="Assets\CrystalAreaScript.cs" />
@@ -85,6 +87,7 @@
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\CrystalDamageScript.cs" />
+     <Compile Include="Assets\CameraShake.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\Scripts\DamageScript.cs" />
@@ -114,6 +117,7 @@
      <Compile Include="Assets\Scripts\PlayerLook.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\Scripts\Triangle.cs" />
+     <Compile Include="Assets\VolumeScript.cs" />
      <Compile Include="Assets\Scripts\RandomSpawner.cs" />
      <Compile Include="Assets\ExtendedPickUps\Scripts\GoldPickUp.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -147,10 +151,6 @@
      <Compile Include="Assets\Scripts\IAttackable.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\Scripts\WeaponSwitching.cs" />
-     <Compile Include="Assets\VolumeScript.cs" />
-     <Compile Include="Assets\GameOverScript.cs" />
-     <Compile Include="Assets\CameraShake.cs" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\3rd Party\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
