@@ -14,47 +14,54 @@ public class RaycastWeapon : MonoBehaviour
     public GameObject muzzle;
 
     float accumulatedTime;
-    
+
     Ray ray;
-    
+
     public Camera fpsCam;
-    
+    //public AudioSource fireSound;
+
     public float damage = 10f;
     public float range = 200f;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")){
+        if (Input.GetButtonDown("Fire1"))
+        {
             StartFiring();
         }
-        if(Input.GetButtonUp("Fire1")){
+        if (Input.GetButtonUp("Fire1"))
+        {
             StopFiring();
         }
-        if(isFiring){
+        if (isFiring)
+        {
             UpdateFiring(Time.deltaTime);
         }
     }
 
-    public void UpdateFiring(float deltaTime){
+    public void UpdateFiring(float deltaTime)
+    {
         accumulatedTime += deltaTime;
         float fireInterval = 1.0f / fireRate;
-        while(accumulatedTime >= 0.0f) {
+        while (accumulatedTime >= 0.0f)
+        {
             StartFiring();
             accumulatedTime -= fireInterval;
         }
     }
 
-    public void StartFiring(){
+    public void StartFiring()
+    {
         accumulatedTime = 0.0f;
         isFiring = true;
         muzzleFlash.Emit(1);
-
+        //fireSound.Play();
         RaycastHit hit;
         ray.origin = fpsCam.transform.position;
         ray.direction = fpsCam.transform.forward;
@@ -62,40 +69,46 @@ public class RaycastWeapon : MonoBehaviour
         // var bulletLine = Instantiate(bulletTrace, muzzle.transform.position, Quaternion.identity);
         // bulletLine.AddPosition(muzzle.transform.position);
 
-        
 
-            if (Physics.Raycast (ray, out hit))
-            {
-            
+
+        if (Physics.Raycast(ray, out hit))
+        {
+
             // bulletLine.transform.position = hit.point;
-            
+
 
 
             Debug.Log("firing");
             DamageScript target = hit.transform.GetComponent<DamageScript>();
 
             tag = hit.transform.gameObject.tag;
-            if(!tag.Equals("Creep")){
+            if (!tag.Equals("Creep"))
+            {
                 Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
             }
 
-            if(target.transform.gameObject.tag.Equals("Creep")){
-                 Instantiate(hitEffectEnemy, hit.point, Quaternion.LookRotation(hit.normal));
-            } 
-            
-            if(target != null && !target.transform.gameObject.tag.Equals("Player")){
-                 target.TakeDamage(damage);
+            if (target.transform.gameObject.tag.Equals("Creep"))
+            {
+                Instantiate(hitEffectEnemy, hit.point, Quaternion.LookRotation(hit.normal));
             }
-            
+
+            if (target != null && !target.transform.gameObject.tag.Equals("Player"))
+            {
+                target.TakeDamage(damage);
+            }
+
             GameObject bulletLine = ObjectPooler.SharedInstance.GetPooledObject();
-            if(bulletLine != null){
-            bulletLine.transform.position = hit.point;
+            if (bulletLine != null)
+            {
+                bulletLine.transform.position = hit.point;
             }
         }
 
     }
 
-    public void StopFiring(){
+    public void StopFiring()
+    {
         isFiring = false;
+        //fireSound.Stop();
     }
 }
