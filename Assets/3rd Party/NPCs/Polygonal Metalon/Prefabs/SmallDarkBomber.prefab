@@ -95,6 +95,7 @@ MonoBehaviour:
   coins: {fileID: 2953436821884977804, guid: eba0d0b97edb84fefb4c60ba259e4592, type: 3}
   crystals: {fileID: 5339575135173267663, guid: 882a9f8ca2a79184faeb23bf9485a7af, type: 3}
   animator: {fileID: 2545922310729632467}
+  cameraShake: {fileID: 0}
 --- !u!114 &694869526010899133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +127,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 19
-  m_Acceleration: 8
+  m_Acceleration: 300
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0

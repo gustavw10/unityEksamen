@@ -151,6 +151,7 @@
      <Compile Include="Assets\Scripts\IAttackable.cs" />
      <Compile Include="Assets\3rd Party\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Scripts\spawnerImproved.cs" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\3rd Party\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\3rd Party\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

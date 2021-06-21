@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1690298788086574451}
   - component: {fileID: 1690298788086574450}
+  - component: {fileID: 6862213960131317637}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -91,3 +92,37 @@ MonoBehaviour:
   waveThreeAmount: 2
   waveFourAmount: 12
   waveFiveAmount: 12
+  waveSixAmount: 1
+  waveSevenAmount: 1
+  waveEightAmount: 1
+  waveNineAmount: 1
+  waveTenAmount: 1
+--- !u!114 &6862213960131317637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690298788086574448}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97eec3cb5469222489b336a73c1f7843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  SpawnerType: 
+  enemyLevel: 0
+  enemy_one: {fileID: 1783563462218004, guid: 7f931d4b5c97d194d8726ddf5acdd440, type: 3}
+  enemy_two: {fileID: 0}
+  enemy_three: {fileID: 0}
+  enemy_four: {fileID: 0}
+  enemy_five: {fileID: 0}
+  totalEnemy: 10
+  Spawn: 1
+  waveTimer: 20
+  totalWaves: 5
+  waveOneAmount: 1
+  waveTwoAmount: 1
+  waveThreeAmount: 1
+  waveFourAmount: 1
+  waveFiveAmount: 1
